@@ -1,0 +1,17 @@
+package com.capg.cms.dao;
+
+import com.capg.cms.beans.Customer;
+
+public interface ICustomerDAO{
+	
+	//same as in service
+	
+//	public boolean addCustomer(Customer c);
+	public Customer displayCustomer(long accountNo, int pin);
+	boolean addCustomer(long accNo, Customer c);
+	
+	
+	
+	
+
+}
