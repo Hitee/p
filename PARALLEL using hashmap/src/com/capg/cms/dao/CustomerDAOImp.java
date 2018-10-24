@@ -37,16 +37,19 @@ public class CustomerDAOImp implements ICustomerDAO {
 		
 		Customer cust = null;
 		for (Customer custList : custList.values()) {
-		//	valu
-		    System.out.println("Value = " + value);
+		if(custList.getAccountNo() == accountNo)
+		{
+			 System.out.println("Value = " + custList.getBalance());
 		}
-		for(Customer c : custList)
+		   
+		}
+		/*for(Customer c : custList)
 		{
 			if(c.getAccountNo() == accountNo && c.getPin() == pin)
 			{
 				cust = c;
 			}
-		}
+		}*/
 		
 		
 		return cust;

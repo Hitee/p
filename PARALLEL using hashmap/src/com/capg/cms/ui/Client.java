@@ -141,7 +141,7 @@ public class Client {
 			if(valid)
 			{
 				Customer c = service.displayCustomer(accountNo2, pin2);
-				System.out.println(c.getBalance());
+				//System.out.println(c.getBalance());
 				/*if(c != null)
 				System.out.println(c);
 				else
