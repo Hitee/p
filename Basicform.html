@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+	#element1{
+	
+	}
+	body{
+	}
+	
+</style>
+<title>Form 1</title>
+</head>
+ <body>
+ <script src="click.js"> </script>
+	<center>
+	
+	<form name= "form1" method="GET" onclick="return validate()"> 
+	<label>company name</label> <input id="element1" type="text" name="companyName" value="CAPGEMINI" readonly/><br/>
+	<label>enter name :</label><input type="text" name="userName" placeholder="enter name"  autofocus/><br/>
+	<label>enter city :</label><input type="text" name="city" autofocus/><br/>
+	<label>password : </label> <input type="password" name="password" /><br/>
+	<label>Gender: </label> 
+	<br/>
+	Male <input type="radio" name="gender1"  value="M"/><br/>
+	Female <input type="radio" name="gender2" value="F"/>
+	<br>
+	<label> languages Known</label>
+	English <input type="checkbox" name="lang1" value="Eng"/><br>
+	Telugu<input type="checkbox" name="lang2" value="Tel"/><br>
+	Tamil<input type="checkbox" name="lang3" value="tam"/><br>
+	<br>
+	hidden : <input type="hidden" value="welcome my emp id is 23432"/>
+	
+	<br>
+	<textarea rows="3" cols="5"></textarea>
+	<br/>
+	<label>country: </label> 
+	<select name="country" multiple disabled>
+		<option>select</option>
+		<option selected>IND</option>
+		<option>US</option>
+		<option>UK</option>
+		<option>IRAN</option>
+		<option>IRAQ</option>
+	</select>
+	
+	<br>
+	My number : <input type="number"  max="100" step="10"/><br>
+	<label>email : </label><input type="email" /><br>
+	<label>mobile number</label><input type="text" name="mobile" maxlength="10" size="20"/>
+	<label>alternate number</label><input type="number" name="altMobile"  value="987876542" size="20" disabled/>
+	<input type="submit" value="store" name="saves data" />
+	<input type="reset" value="clear"/><br/>
+	<input type="button" name = "sum" value="submit"/>
+	
+	</form>
+	</center>
+ </body>
+</html>
