@@ -2,23 +2,30 @@
 
 
 function validate() {
+	
+	
+		
+	
 	var x= document.forms["form1"]["userName"].value;
 	if(x=="") {
 		alert("please fill username..");
-		return false;
-		
-		var letters = /^[A-Za-z]+$/;
-   if(x.value.match(letters))
-     {
-		 alert("message");
-      return true;
-     }
-   else
-     {
-     alert("message");
-     return false;
-     }
+		//return false;
 	}
+	var name = /^[A-Z][a-z]+$/
+	if (name.test(document.form1.userName.value) == true){alert("it is a correct name");}
+	if (name.test(document.form1.userName.value) == false){alert("it is a wrong name");}
+	
+	
+	var x= document.forms["form1"]["mobile"].value;
+	if(x=="") {
+		alert("please fill mobile number..");
+		//return false;
+	}
+	var mob = /^[7-9]{1}[0-9]{9}$/;
+	if (mobile.test(document.form1.mobile.value) == true){alert("it is a correct mobile number");}
+	if (mobile.test(document.form1.mobile.value) == false){alert("it is a wrong mobile number");}
+	
+	
 	var city= document.forms["form1"]["city"].value;
 	if(city==""){
 		alert("please enter city name");
